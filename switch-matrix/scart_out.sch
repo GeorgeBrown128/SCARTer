@@ -1,0 +1,406 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:scarter
+LIBS:switch-matrix-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 18 19
+Title "SCARTer Switch Matrix SCART Output Block"
+Date "2018-06-25"
+Rev "1"
+Comp "George Brown"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR063
+U 1 1 5B31A65B
+P 5750 4600
+AR Path="/5B3120B8/5B31A65B" Ref="#PWR063"  Part="1" 
+AR Path="/5B30C6E2/5B31A65B" Ref="#PWR066"  Part="1" 
+AR Path="/5B30E6D4/5B31A65B" Ref="#PWR069"  Part="1" 
+F 0 "#PWR069" H 5750 4350 50  0001 C CNN
+F 1 "GND" H 5750 4450 50  0000 C CNN
+F 2 "" H 5750 4600 50  0000 C CNN
+F 3 "" H 5750 4600 50  0000 C CNN
+	1    5750 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5650 3600
+NoConn ~ 5650 3700
+Text HLabel 4200 3900 0    50   Input ~ 0
+R
+Text HLabel 4200 3700 0    50   Input ~ 0
+G
+Text HLabel 4200 3500 0    50   Input ~ 0
+B
+Text HLabel 3300 4200 0    50   Input ~ 0
+C
+Text HLabel 3000 2900 0    50   Input ~ 0
+AR
+Text HLabel 3000 3400 0    50   Input ~ 0
+AL
+$Comp
+L R_Small R1702
+U 1 1 5B31A743
+P 5950 3900
+AR Path="/5B3120B8/5B31A743" Ref="R1702"  Part="1" 
+AR Path="/5B30C6E2/5B31A743" Ref="R1802"  Part="1" 
+AR Path="/5B30E6D4/5B31A743" Ref="R1902"  Part="1" 
+F 0 "R1802" H 5980 3920 50  0000 L CNN
+F 1 "75" H 5980 3860 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5950 3900 50  0001 C CNN
+F 3 "" H 5950 3900 50  0000 C CNN
+	1    5950 3900
+	0    1    1    0   
+$EndComp
+Text HLabel 6150 3900 2    50   Input ~ 0
+RGB
+$Comp
+L GS3 GS1701
+U 1 1 5B31D772
+P 3650 2900
+AR Path="/5B3120B8/5B31D772" Ref="GS1701"  Part="1" 
+AR Path="/5B30C6E2/5B31D772" Ref="GS1801"  Part="1" 
+AR Path="/5B30E6D4/5B31D772" Ref="GS1901"  Part="1" 
+F 0 "GS1801" H 3700 3100 50  0000 C CNN
+F 1 "GS3" H 3700 2701 50  0000 C CNN
+F 2 "Connect:GS3" V 3738 2826 50  0000 C CNN
+F 3 "" H 3650 2900 50  0000 C CNN
+	1    3650 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GS3 GS1702
+U 1 1 5B31D7F0
+P 3650 3400
+AR Path="/5B3120B8/5B31D7F0" Ref="GS1702"  Part="1" 
+AR Path="/5B30C6E2/5B31D7F0" Ref="GS1802"  Part="1" 
+AR Path="/5B30E6D4/5B31D7F0" Ref="GS1902"  Part="1" 
+F 0 "GS1802" H 3700 3600 50  0000 C CNN
+F 1 "GS3" H 3700 3201 50  0000 C CNN
+F 2 "Connect:GS3" V 3738 3326 50  0000 C CNN
+F 3 "" H 3650 3400 50  0000 C CNN
+	1    3650 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CP_Small C1701
+U 1 1 5B31D875
+P 3300 2900
+AR Path="/5B3120B8/5B31D875" Ref="C1701"  Part="1" 
+AR Path="/5B30C6E2/5B31D875" Ref="C1801"  Part="1" 
+AR Path="/5B30E6D4/5B31D875" Ref="C1901"  Part="1" 
+F 0 "C1801" H 3310 2970 50  0000 L CNN
+F 1 "220u" H 3310 2820 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x7.7" H 3300 2900 50  0001 C CNN
+F 3 "" H 3300 2900 50  0000 C CNN
+	1    3300 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP_Small C1702
+U 1 1 5B31D8A7
+P 3300 3400
+AR Path="/5B3120B8/5B31D8A7" Ref="C1702"  Part="1" 
+AR Path="/5B30C6E2/5B31D8A7" Ref="C1802"  Part="1" 
+AR Path="/5B30E6D4/5B31D8A7" Ref="C1902"  Part="1" 
+F 0 "C1802" H 3310 3470 50  0000 L CNN
+F 1 "220u" H 3310 3320 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x7.7" H 3300 3400 50  0001 C CNN
+F 3 "" H 3300 3400 50  0000 C CNN
+	1    3300 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GS3 GS1703
+U 1 1 5B31DC53
+P 3650 4200
+AR Path="/5B3120B8/5B31DC53" Ref="GS1703"  Part="1" 
+AR Path="/5B30C6E2/5B31DC53" Ref="GS1803"  Part="1" 
+AR Path="/5B30E6D4/5B31DC53" Ref="GS1903"  Part="1" 
+F 0 "GS1803" H 3700 4400 50  0000 C CNN
+F 1 "GS3" H 3700 4001 50  0000 C CNN
+F 2 "Connect:GS3" V 3738 4126 50  0000 C CNN
+F 3 "" H 3650 4200 50  0000 C CNN
+	1    3650 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 3400 4300 3400
+Wire Wire Line
+	4300 3400 4300 4500
+Wire Wire Line
+	4300 3600 4400 3600
+Wire Wire Line
+	4300 3800 4400 3800
+Connection ~ 4300 3600
+Wire Wire Line
+	4300 4000 4400 4000
+Connection ~ 4300 3800
+Wire Wire Line
+	4300 4200 4400 4200
+Connection ~ 4300 4000
+Wire Wire Line
+	5650 3300 5750 3300
+Wire Wire Line
+	5750 3300 5750 4600
+Wire Wire Line
+	5750 3800 5650 3800
+Wire Wire Line
+	5750 4000 5650 4000
+Connection ~ 5750 3800
+Wire Wire Line
+	4300 4500 5750 4500
+Connection ~ 5750 4000
+Connection ~ 4300 4200
+Connection ~ 5750 4500
+Wire Wire Line
+	4050 3300 4400 3300
+Wire Wire Line
+	4050 3200 4400 3200
+Wire Wire Line
+	4200 3500 4400 3500
+Wire Wire Line
+	4200 3700 4400 3700
+Wire Wire Line
+	4200 3900 4400 3900
+Wire Wire Line
+	3800 4100 4400 4100
+Wire Wire Line
+	5650 3900 5850 3900
+Wire Wire Line
+	6150 3900 6050 3900
+Wire Wire Line
+	3400 3400 3500 3400
+Wire Wire Line
+	3500 2900 3400 2900
+Wire Wire Line
+	3000 3400 3200 3400
+Wire Wire Line
+	3200 2900 3000 2900
+Wire Wire Line
+	5750 3200 5650 3200
+Wire Wire Line
+	5750 2800 5750 3200
+Wire Wire Line
+	3800 2800 5750 2800
+Wire Wire Line
+	3800 3300 3950 3300
+Wire Wire Line
+	3950 3300 3950 2900
+Wire Wire Line
+	3950 2900 5850 2900
+Wire Wire Line
+	5850 2900 5850 3400
+Wire Wire Line
+	5850 3400 5650 3400
+Wire Wire Line
+	3800 3000 4050 3000
+Wire Wire Line
+	4050 3000 4050 3200
+Wire Wire Line
+	3800 3500 4050 3500
+Wire Wire Line
+	4050 3500 4050 3300
+Wire Wire Line
+	3800 4300 3900 4300
+Wire Wire Line
+	3900 4300 3900 4400
+Wire Wire Line
+	3900 4400 5850 4400
+Wire Wire Line
+	5850 4400 5850 4100
+Wire Wire Line
+	5850 4100 5650 4100
+Wire Wire Line
+	3300 4200 3500 4200
+Text Notes 3400 800  0    60   ~ 0
+Solder position 1 for capture socket using standard SCART breakout blocks.\nSolder position 3 for standard sockets connected to equipment using SCART crossover cables.
+$Comp
+L Q_PMOS_GSD Q1701
+U 1 1 5B303C10
+P 7500 3700
+AR Path="/5B3120B8/5B303C10" Ref="Q1701"  Part="1" 
+AR Path="/5B30C6E2/5B303C10" Ref="Q1801"  Part="1" 
+AR Path="/5B30E6D4/5B303C10" Ref="Q1901"  Part="1" 
+F 0 "Q1801" H 7800 3750 50  0000 R CNN
+F 1 "BSS84" H 7950 3650 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD_Stock:SOT-23" H 7700 3800 50  0001 C CNN
+F 3 "" H 7500 3700 50  0000 C CNN
+	1    7500 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L +12V #PWR064
+U 1 1 5B3042FF
+P 7200 3200
+AR Path="/5B3120B8/5B3042FF" Ref="#PWR064"  Part="1" 
+AR Path="/5B30C6E2/5B3042FF" Ref="#PWR067"  Part="1" 
+AR Path="/5B30E6D4/5B3042FF" Ref="#PWR070"  Part="1" 
+F 0 "#PWR070" H 7200 3050 50  0001 C CNN
+F 1 "+12V" H 7200 3340 50  0000 C CNN
+F 2 "" H 7200 3200 50  0000 C CNN
+F 3 "" H 7200 3200 50  0000 C CNN
+	1    7200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3700 7200 3700
+Wire Wire Line
+	7200 3700 7200 3600
+$Comp
+L R_Small R1701
+U 1 1 5B3043E7
+P 7200 3500
+AR Path="/5B3120B8/5B3043E7" Ref="R1701"  Part="1" 
+AR Path="/5B30C6E2/5B3043E7" Ref="R1801"  Part="1" 
+AR Path="/5B30E6D4/5B3043E7" Ref="R1901"  Part="1" 
+F 0 "R1801" H 7230 3520 50  0000 L CNN
+F 1 "10k" H 7230 3460 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7200 3500 50  0001 C CNN
+F 3 "" H 7200 3500 50  0000 C CNN
+	1    7200 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3200 7200 3400
+Wire Wire Line
+	7200 3300 8800 3300
+Wire Wire Line
+	7600 3300 7600 3500
+Connection ~ 7200 3300
+$Comp
+L Q_NPN_BEC Q1703
+U 1 1 5B30474D
+P 7500 4300
+AR Path="/5B3120B8/5B30474D" Ref="Q1703"  Part="1" 
+AR Path="/5B30C6E2/5B30474D" Ref="Q1803"  Part="1" 
+AR Path="/5B30E6D4/5B30474D" Ref="Q1903"  Part="1" 
+F 0 "Q1803" H 7800 4350 50  0000 R CNN
+F 1 "MMBT3904" H 8100 4250 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD_Stock:SOT-23" H 7700 4400 50  0001 C CNN
+F 3 "" H 7500 4300 50  0000 C CNN
+	1    7500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1703
+U 1 1 5B3047B6
+P 7100 4300
+AR Path="/5B3120B8/5B3047B6" Ref="R1703"  Part="1" 
+AR Path="/5B30C6E2/5B3047B6" Ref="R1803"  Part="1" 
+AR Path="/5B30E6D4/5B3047B6" Ref="R1903"  Part="1" 
+F 0 "R1803" H 7130 4320 50  0000 L CNN
+F 1 "10k" H 7130 4260 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7100 4300 50  0001 C CNN
+F 3 "" H 7100 4300 50  0000 C CNN
+	1    7100 4300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7200 4300 7300 4300
+Wire Wire Line
+	7600 3900 7600 4100
+$Comp
+L GND #PWR065
+U 1 1 5B30490B
+P 7600 4600
+AR Path="/5B3120B8/5B30490B" Ref="#PWR065"  Part="1" 
+AR Path="/5B30C6E2/5B30490B" Ref="#PWR068"  Part="1" 
+AR Path="/5B30E6D4/5B30490B" Ref="#PWR071"  Part="1" 
+F 0 "#PWR071" H 7600 4350 50  0001 C CNN
+F 1 "GND" H 7600 4450 50  0000 C CNN
+F 2 "" H 7600 4600 50  0000 C CNN
+F 3 "" H 7600 4600 50  0000 C CNN
+	1    7600 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4600 7600 4500
+$Comp
+L Q_NPN_BEC Q1702
+U 1 1 5B304B2A
+P 8700 3700
+AR Path="/5B3120B8/5B304B2A" Ref="Q1702"  Part="1" 
+AR Path="/5B30C6E2/5B304B2A" Ref="Q1802"  Part="1" 
+AR Path="/5B30E6D4/5B304B2A" Ref="Q1902"  Part="1" 
+F 0 "Q1802" H 9000 3750 50  0000 R CNN
+F 1 "MMBT3904" H 9300 3650 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD_Stock:SOT-23" H 8900 3800 50  0001 C CNN
+F 3 "" H 8700 3700 50  0000 C CNN
+	1    8700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4000 9000 4000
+Wire Wire Line
+	8800 4000 8800 3900
+Connection ~ 7600 4000
+Text GLabel 8400 3700 0    60   Input ~ 0
+6Vbias
+Wire Wire Line
+	8400 3700 8500 3700
+Wire Wire Line
+	8800 3300 8800 3500
+Connection ~ 7600 3300
+Connection ~ 8800 4000
+Text Label 9000 4000 0    60   ~ 0
+aspect
+Wire Wire Line
+	5650 3500 5850 3500
+Text Label 5850 3500 0    60   ~ 0
+aspect
+Text HLabel 6900 4300 0    50   Input ~ 0
+ASPECT
+Wire Wire Line
+	6900 4300 7000 4300
+Text Notes 8400 4300 0    60   ~ 0
++12V for 4:3\n+5V for 16:9
+$Comp
+L SCART_Conn CONN1701
+U 1 1 5B37B552
+P 4950 4200
+AR Path="/5B3120B8/5B37B552" Ref="CONN1701"  Part="1" 
+AR Path="/5B30C6E2/5B37B552" Ref="CONN1801"  Part="1" 
+AR Path="/5B30E6D4/5B37B552" Ref="CONN1901"  Part="1" 
+F 0 "CONN1801" H 4750 5350 60  0000 C CNN
+F 1 "SCART_Conn" H 4850 4050 60  0000 C CNN
+F 2 "scart:V_SCART" H 5100 4350 60  0000 C CNN
+F 3 "" H 5100 4350 60  0000 C CNN
+	1    4950 4200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

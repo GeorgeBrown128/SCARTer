@@ -1,0 +1,478 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:scarter
+LIBS:switch-matrix-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 19
+Title "SCARTer Switch Matrix Microcontroller"
+Date "2018-06-14"
+Rev "1"
+Comp "George Brown"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +5V #PWR015
+U 1 1 5B22B84D
+P 2100 1450
+F 0 "#PWR015" H 2100 1300 50  0001 C CNN
+F 1 "+5V" H 2100 1590 50  0000 C CNN
+F 2 "" H 2100 1450 50  0000 C CNN
+F 3 "" H 2100 1450 50  0000 C CNN
+	1    2100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 5B22C079
+P 2100 3950
+F 0 "#PWR016" H 2100 3700 50  0001 C CNN
+F 1 "GND" H 2100 3800 50  0000 C CNN
+F 2 "" H 2100 3950 50  0000 C CNN
+F 3 "" H 2100 3950 50  0000 C CNN
+	1    2100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C304
+U 1 1 5B22C269
+P 2100 2350
+F 0 "C304" H 2110 2420 50  0000 L CNN
+F 1 "1u" H 2110 2270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2100 2350 50  0001 C CNN
+F 3 "" H 2100 2350 50  0000 C CNN
+	1    2100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 5B22C34B
+P 2100 2550
+F 0 "#PWR017" H 2100 2300 50  0001 C CNN
+F 1 "GND" H 2100 2400 50  0000 C CNN
+F 2 "" H 2100 2550 50  0000 C CNN
+F 3 "" H 2100 2550 50  0000 C CNN
+	1    2100 2550
+	1    0    0    -1  
+$EndComp
+Text HLabel 5300 2400 2    50   Output ~ 0
+12V_SHDN
+Text HLabel 4200 2900 2    50   BiDi ~ 0
+SCL
+Text HLabel 4200 2800 2    50   BiDi ~ 0
+SDA
+$Comp
+L ATMEGA328P-A IC301
+U 1 1 5B2F810A
+P 3100 2650
+F 0 "IC301" H 2350 3900 50  0000 L BNN
+F 1 "ATMEGA328P-A" H 3500 1250 50  0000 L BNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 3100 2650 50  0000 C CIN
+F 3 "" H 3100 2650 50  0000 C CNN
+	1    3100 2650
+	1    0    0    -1  
+$EndComp
+Text HLabel 4200 3150 2    50   Input ~ 0
+UART_RX
+Text HLabel 4200 3250 2    50   Output ~ 0
+UART_TX
+$Comp
+L R_Small R302
+U 1 1 5B321EBA
+P 5200 2800
+F 0 "R302" H 5230 2820 50  0000 L CNN
+F 1 "10k" H 5230 2760 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5200 2800 50  0001 C CNN
+F 3 "" H 5200 2800 50  0000 C CNN
+	1    5200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR018
+U 1 1 5B321F87
+P 5200 2600
+F 0 "#PWR018" H 5200 2450 50  0001 C CNN
+F 1 "+5V" H 5200 2740 50  0000 C CNN
+F 2 "" H 5200 2600 50  0000 C CNN
+F 3 "" H 5200 2600 50  0000 C CNN
+	1    5200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR019
+U 1 1 5B322056
+P 1700 1450
+F 0 "#PWR019" H 1700 1300 50  0001 C CNN
+F 1 "+5V" H 1700 1590 50  0000 C CNN
+F 2 "" H 1700 1450 50  0000 C CNN
+F 3 "" H 1700 1450 50  0000 C CNN
+	1    1700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C303
+U 1 1 5B322069
+P 1700 1750
+F 0 "C303" H 1710 1820 50  0000 L CNN
+F 1 "100n" H 1710 1670 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1700 1750 50  0001 C CNN
+F 3 "" H 1700 1750 50  0000 C CNN
+	1    1700 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C302
+U 1 1 5B3220E3
+P 1450 1750
+F 0 "C302" H 1460 1820 50  0000 L CNN
+F 1 "100n" H 1460 1670 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1450 1750 50  0001 C CNN
+F 3 "" H 1450 1750 50  0000 C CNN
+	1    1450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C301
+U 1 1 5B322149
+P 1200 1750
+F 0 "C301" H 1210 1820 50  0000 L CNN
+F 1 "1u" H 1210 1670 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1200 1750 50  0001 C CNN
+F 3 "" H 1200 1750 50  0000 C CNN
+	1    1200 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 5B32228D
+P 1700 2050
+F 0 "#PWR020" H 1700 1800 50  0001 C CNN
+F 1 "GND" H 1700 1900 50  0000 C CNN
+F 2 "" H 1700 2050 50  0000 C CNN
+F 3 "" H 1700 2050 50  0000 C CNN
+	1    1700 2050
+	1    0    0    -1  
+$EndComp
+Text HLabel 4200 3350 2    50   Output ~ 0
+SEL_R
+Text HLabel 4200 3450 2    50   Output ~ 0
+SEL_G
+Text HLabel 4200 3550 2    50   Output ~ 0
+SEL_B
+Text HLabel 4200 3650 2    50   Output ~ 0
+SEL_C
+Text HLabel 4200 3750 2    50   Output ~ 0
+SEL_AOR
+Text HLabel 4200 3850 2    50   Output ~ 0
+SEL_AOL
+Text Label 4200 2600 0    50   ~ 0
+LED_R
+Text Label 4200 2700 0    50   ~ 0
+LED_G
+Wire Wire Line
+	2100 3850 2200 3850
+Wire Wire Line
+	2100 3650 2100 3950
+Wire Wire Line
+	2100 2550 2100 2450
+Wire Wire Line
+	2100 2250 2100 2150
+Wire Wire Line
+	2100 2150 2200 2150
+Wire Wire Line
+	4100 2400 5300 2400
+Wire Wire Line
+	4100 2900 4200 2900
+Wire Wire Line
+	4100 2800 4200 2800
+Wire Wire Line
+	2100 1450 2100 1850
+Wire Wire Line
+	2100 1650 2200 1650
+Wire Wire Line
+	2200 1550 2100 1550
+Connection ~ 2100 1550
+Wire Wire Line
+	2100 1850 2200 1850
+Connection ~ 2100 1650
+Wire Wire Line
+	2100 3650 2200 3650
+Connection ~ 2100 3850
+Wire Wire Line
+	2200 3750 2100 3750
+Connection ~ 2100 3750
+Wire Wire Line
+	4200 3250 4100 3250
+Wire Wire Line
+	4100 3150 4200 3150
+Wire Wire Line
+	5200 2900 5200 3000
+Wire Wire Line
+	5200 3000 4100 3000
+Wire Wire Line
+	5200 2600 5200 2700
+Wire Wire Line
+	1700 1850 1700 2050
+Wire Wire Line
+	1200 1950 1700 1950
+Wire Wire Line
+	1200 1950 1200 1850
+Wire Wire Line
+	1450 1850 1450 1950
+Connection ~ 1450 1950
+Wire Wire Line
+	1200 1650 1200 1550
+Wire Wire Line
+	1200 1550 1700 1550
+Wire Wire Line
+	1700 1450 1700 1650
+Connection ~ 1700 1550
+Wire Wire Line
+	1450 1650 1450 1550
+Connection ~ 1450 1550
+Connection ~ 1700 1950
+Wire Wire Line
+	4200 3850 4100 3850
+Wire Wire Line
+	4100 3750 4200 3750
+Wire Wire Line
+	4200 3650 4100 3650
+Wire Wire Line
+	4100 3550 4200 3550
+Wire Wire Line
+	4200 3450 4100 3450
+Wire Wire Line
+	4100 3350 4200 3350
+Wire Wire Line
+	4100 2700 4200 2700
+Wire Wire Line
+	4100 2600 4200 2600
+Wire Wire Line
+	9700 5500 9600 5500
+Wire Wire Line
+	9700 5800 9600 5800
+Text Label 9600 5500 2    50   ~ 0
+LED_R
+Text Label 9600 5800 2    50   ~ 0
+LED_G
+$Comp
+L R_Small R303
+U 1 1 5B323C16
+P 10200 5500
+F 0 "R303" H 10230 5520 50  0000 L CNN
+F 1 "470" H 10230 5460 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10200 5500 50  0001 C CNN
+F 3 "" H 10200 5500 50  0000 C CNN
+	1    10200 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R304
+U 1 1 5B323C5C
+P 10200 5800
+F 0 "R304" H 10230 5820 50  0000 L CNN
+F 1 "470" H 10230 5760 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10200 5800 50  0001 C CNN
+F 3 "" H 10200 5800 50  0000 C CNN
+	1    10200 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 5500 10100 5500
+Wire Wire Line
+	10100 5800 10000 5800
+Wire Wire Line
+	10300 5500 10400 5500
+Wire Wire Line
+	10400 5500 10400 5900
+Wire Wire Line
+	10400 5800 10300 5800
+Connection ~ 10400 5800
+$Comp
+L GND #PWR021
+U 1 1 5B323E28
+P 10400 5900
+F 0 "#PWR021" H 10400 5650 50  0001 C CNN
+F 1 "GND" H 10400 5750 50  0000 C CNN
+F 2 "" H 10400 5900 50  0000 C CNN
+F 3 "" H 10400 5900 50  0000 C CNN
+	1    10400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R301
+U 1 1 5B3445FC
+P 5200 2200
+F 0 "R301" H 5230 2220 50  0000 L CNN
+F 1 "10k" H 5230 2160 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5200 2200 50  0001 C CNN
+F 3 "" H 5200 2200 50  0000 C CNN
+	1    5200 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2300 5200 2400
+Connection ~ 5200 2400
+$Comp
+L +5V #PWR022
+U 1 1 5B34468A
+P 5200 2050
+F 0 "#PWR022" H 5200 1900 50  0001 C CNN
+F 1 "+5V" H 5200 2190 50  0000 C CNN
+F 2 "" H 5200 2050 50  0000 C CNN
+F 3 "" H 5200 2050 50  0000 C CNN
+	1    5200 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2050 5200 2100
+Text HLabel 4500 1550 2    50   Output ~ 0
+RGB_CRT
+Text HLabel 4500 1650 2    50   Output ~ 0
+RGB_LCD
+Text HLabel 4500 1750 2    50   Output ~ 0
+RGB_CAP
+Text HLabel 4500 1850 2    50   Output ~ 0
+ASP_CRT
+Text HLabel 4500 1950 2    50   Output ~ 0
+ASP_LCD
+Text HLabel 4500 2050 2    50   Output ~ 0
+ASP_CAP
+Wire Wire Line
+	4100 2050 4500 2050
+Wire Wire Line
+	4100 1950 4500 1950
+Wire Wire Line
+	4100 1850 4500 1850
+Wire Wire Line
+	4100 1750 4500 1750
+Wire Wire Line
+	4100 1650 4500 1650
+Wire Wire Line
+	4500 1550 4100 1550
+Text Label 4150 1850 0    50   ~ 0
+MOSI
+Text Label 4150 1950 0    50   ~ 0
+MISO
+Text Label 4150 2050 0    50   ~ 0
+SCK
+NoConn ~ 4100 2150
+NoConn ~ 4100 2250
+NoConn ~ 4100 2500
+NoConn ~ 2200 2900
+NoConn ~ 2200 3000
+Text Label 4200 3000 0    50   ~ 0
+~RESET
+$Comp
+L CONN_01X06 P301
+U 1 1 5B345E1F
+P 7150 2750
+F 0 "P301" H 7150 3100 50  0000 C CNN
+F 1 "CONN_01X06" V 7250 2750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 7150 2750 50  0001 C CNN
+F 3 "" H 7150 2750 50  0000 C CNN
+	1    7150 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3000 6850 3000
+Wire Wire Line
+	6850 3000 6850 3100
+$Comp
+L GND #PWR023
+U 1 1 5B345EF3
+P 6850 3100
+F 0 "#PWR023" H 6850 2850 50  0001 C CNN
+F 1 "GND" H 6850 2950 50  0000 C CNN
+F 2 "" H 6850 3100 50  0000 C CNN
+F 3 "" H 6850 3100 50  0000 C CNN
+	1    6850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2500 6850 2500
+Wire Wire Line
+	6850 2500 6850 2400
+$Comp
+L +5V #PWR024
+U 1 1 5B345FCC
+P 6850 2400
+F 0 "#PWR024" H 6850 2250 50  0001 C CNN
+F 1 "+5V" H 6850 2540 50  0000 C CNN
+F 2 "" H 6850 2400 50  0000 C CNN
+F 3 "" H 6850 2400 50  0000 C CNN
+	1    6850 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2600 6850 2600
+Wire Wire Line
+	6850 2700 6950 2700
+Wire Wire Line
+	6950 2800 6850 2800
+Wire Wire Line
+	6950 2900 6850 2900
+Text Label 6850 2600 2    50   ~ 0
+MOSI
+Text Label 6850 2700 2    50   ~ 0
+MISO
+Text Label 6850 2800 2    50   ~ 0
+SCK
+Text Label 6850 2900 2    50   ~ 0
+~RESET
+$Comp
+L LED_BI D301
+U 1 1 5B35AF26
+P 9850 5800
+F 0 "D301" H 9750 5900 60  0000 C CNN
+F 1 "LED_BI" H 9850 5750 60  0001 C CNN
+F 2 "" H 9850 5800 60  0001 C CNN
+F 3 "" H 9850 5800 60  0000 C CNN
+	1    9850 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_BI D301
+U 2 1 5B35AF55
+P 9850 5500
+F 0 "D301" H 9750 5600 60  0000 C CNN
+F 1 "LED_BI" H 9850 5450 60  0001 C CNN
+F 2 "" H 9850 5500 60  0001 C CNN
+F 3 "" H 9850 5500 60  0000 C CNN
+	2    9850 5500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

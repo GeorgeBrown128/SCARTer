@@ -1,0 +1,535 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:scarter
+LIBS:switch-matrix-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 19
+Title "SCARTer Switch Matrix Top Sheet"
+Date "2018-06-25"
+Rev "1"
+Comp "George Brown"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6050 4050 1000 600 
+U 5B223B8D
+F0 "psus" 60
+F1 "power-supplies.sch" 60
+F2 "VBUS" I L 6050 4150 60 
+F3 "GNDIN" I L 6050 4550 60 
+F4 "12V_SHDN" I R 7050 4150 60 
+$EndSheet
+$Sheet
+S 1650 3950 1100 1500
+U 5B223BC9
+F0 "micro" 60
+F1 "micro.sch" 60
+F2 "12V_SHDN" O R 2750 4050 60 
+F3 "SCL" B R 2750 4250 60 
+F4 "SDA" B R 2750 4350 60 
+F5 "UART_RX" I R 2750 4550 60 
+F6 "UART_TX" O R 2750 4650 60 
+F7 "SEL_R" O L 1650 4050 60 
+F8 "SEL_G" O L 1650 4150 60 
+F9 "SEL_B" O L 1650 4250 60 
+F10 "SEL_C" O L 1650 4350 60 
+F11 "SEL_AOR" O L 1650 4450 60 
+F12 "SEL_AOL" O L 1650 4550 60 
+F13 "RGB_CRT" O L 1650 4750 60 
+F14 "RGB_LCD" O L 1650 4850 60 
+F15 "RGB_CAP" O L 1650 4950 60 
+F16 "ASP_CRT" O L 1650 5150 60 
+F17 "ASP_LCD" O L 1650 5250 60 
+F18 "ASP_CAP" O L 1650 5350 60 
+$EndSheet
+$Sheet
+S 1650 1000 950  2350
+U 5B35776E
+F0 "in-mux" 50
+F1 "in_mux.sch" 50
+F2 "SCL" B L 1650 1850 60 
+F3 "SDA" B L 1650 1950 60 
+F4 "R_CRT" O R 2600 1050 60 
+F5 "R_LCD" O R 2600 1150 60 
+F6 "R_CAP" O R 2600 1250 60 
+F7 "G_CRT" O R 2600 1450 60 
+F8 "G_LCD" O R 2600 1550 60 
+F9 "G_CAP" O R 2600 1650 60 
+F10 "B_CRT" O R 2600 1850 60 
+F11 "B_LCD" O R 2600 1950 60 
+F12 "B_CAP" O R 2600 2050 60 
+F13 "AOL_CRT" O R 2600 3050 60 
+F14 "AOL_LCD" O R 2600 3150 60 
+F15 "AOL_CAP" O R 2600 3250 60 
+F16 "AOR_CRT" O R 2600 2650 60 
+F17 "AOR_LCD" O R 2600 2750 60 
+F18 "AOR_CAP" O R 2600 2850 60 
+F19 "C_CRT" O R 2600 2250 60 
+F20 "C_LCD" O R 2600 2350 60 
+F21 "C_CAP" O R 2600 2450 60 
+F22 "SEL_R" I L 1650 1050 50 
+F23 "SEL_G" I L 1650 1150 50 
+F24 "SEL_B" I L 1650 1250 50 
+F25 "SEL_C" I L 1650 1350 50 
+F26 "SEL_AOL" I L 1650 1450 50 
+F27 "SEL_AOR" I L 1650 1550 50 
+$EndSheet
+$Sheet
+S 4100 1000 550  1100
+U 5B3120B8
+F0 "scart_out_1" 50
+F1 "scart_out.sch" 50
+F2 "R" I L 4100 1100 60 
+F3 "G" I L 4100 1200 60 
+F4 "B" I L 4100 1300 60 
+F5 "C" I L 4100 1400 60 
+F6 "AR" I L 4100 1600 60 
+F7 "AL" I L 4100 1700 60 
+F8 "RGB" I L 4100 1900 60 
+F9 "ASPECT" I L 4100 2000 60 
+$EndSheet
+$Sheet
+S 5250 1000 550  1100
+U 5B30C6E2
+F0 "scart_out_2" 50
+F1 "scart_out.sch" 50
+F2 "R" I L 5250 1100 60 
+F3 "G" I L 5250 1200 60 
+F4 "B" I L 5250 1300 60 
+F5 "C" I L 5250 1400 60 
+F6 "AR" I L 5250 1600 60 
+F7 "AL" I L 5250 1700 60 
+F8 "RGB" I L 5250 1900 60 
+F9 "ASPECT" I L 5250 2000 60 
+$EndSheet
+$Sheet
+S 6400 1000 550  1100
+U 5B30E6D4
+F0 "scart_out_3" 50
+F1 "scart_out.sch" 50
+F2 "R" I L 6400 1100 60 
+F3 "G" I L 6400 1200 60 
+F4 "B" I L 6400 1300 60 
+F5 "C" I L 6400 1400 60 
+F6 "AR" I L 6400 1600 60 
+F7 "AL" I L 6400 1700 60 
+F8 "RGB" I L 6400 1900 60 
+F9 "ASPECT" I L 6400 2000 60 
+$EndSheet
+$Comp
+L USB_OTG P101
+U 1 1 5B317E37
+P 5450 4350
+F 0 "P101" H 5775 4225 50  0000 C CNN
+F 1 "USB_OTG" H 5450 4550 50  0000 C CNN
+F 2 "Connect:USB_Micro-B" V 5400 4250 50  0001 C CNN
+F 3 "" V 5400 4250 50  0000 C CNN
+	1    5450 4350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5750 4250 5850 4250
+Wire Wire Line
+	5850 4250 5850 4350
+Wire Wire Line
+	5850 4350 5750 4350
+Wire Wire Line
+	5750 4150 6050 4150
+Wire Wire Line
+	5350 4750 5350 4850
+Wire Wire Line
+	5350 4850 5850 4850
+Wire Wire Line
+	5850 4850 5850 4550
+Wire Wire Line
+	5750 4550 6050 4550
+Connection ~ 5850 4550
+NoConn ~ 5750 4450
+Wire Wire Line
+	1650 1050 1550 1050
+Wire Wire Line
+	1650 1150 1550 1150
+Wire Wire Line
+	1550 1250 1650 1250
+Wire Wire Line
+	1550 1350 1650 1350
+Wire Wire Line
+	1650 1450 1550 1450
+Wire Wire Line
+	1550 1550 1650 1550
+Wire Wire Line
+	2750 4050 2950 4050
+Text Label 2950 4050 1    50   ~ 0
+12V_SHDN
+Wire Wire Line
+	2750 4250 3450 4250
+Wire Wire Line
+	2750 4350 3450 4350
+$Comp
+L R_Small R101
+U 1 1 5B331703
+P 3150 3950
+F 0 "R101" H 3180 3970 50  0000 L CNN
+F 1 "4k7" H 3180 3910 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3150 3950 50  0001 C CNN
+F 3 "" H 3150 3950 50  0000 C CNN
+	1    3150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R102
+U 1 1 5B331A3D
+P 3350 3950
+F 0 "R102" H 3380 3970 50  0000 L CNN
+F 1 "4k7" H 3380 3910 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3350 3950 50  0001 C CNN
+F 3 "" H 3350 3950 50  0000 C CNN
+	1    3350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4050 3150 4250
+Connection ~ 3150 4250
+Wire Wire Line
+	3350 4350 3350 4050
+Connection ~ 3350 4350
+Wire Wire Line
+	3150 3650 3150 3850
+Wire Wire Line
+	3150 3750 3350 3750
+Wire Wire Line
+	3350 3750 3350 3850
+Connection ~ 3150 3750
+$Comp
+L +5V #PWR01
+U 1 1 5B332D49
+P 3150 3650
+F 0 "#PWR01" H 3150 3500 50  0001 C CNN
+F 1 "+5V" H 3150 3790 50  0000 C CNN
+F 2 "" H 3150 3650 50  0000 C CNN
+F 3 "" H 3150 3650 50  0000 C CNN
+	1    3150 3650
+	1    0    0    -1  
+$EndComp
+Text Label 3450 4250 0    50   ~ 0
+SCL
+Text Label 3450 4350 0    50   ~ 0
+SDA
+Wire Wire Line
+	1650 1850 1550 1850
+Wire Wire Line
+	1550 1950 1650 1950
+Text Label 1550 1050 2    50   ~ 0
+SEL_R
+Text Label 1550 1150 2    50   ~ 0
+SEL_G
+Text Label 1550 1250 2    50   ~ 0
+SEL_B
+Text Label 1550 1350 2    50   ~ 0
+SEL_C
+Text Label 1550 1450 2    50   ~ 0
+SEL_AOL
+Text Label 1550 1550 2    50   ~ 0
+SEL_AOR
+Text Label 1550 1850 2    50   ~ 0
+SCL
+Text Label 1550 1950 2    50   ~ 0
+SDA
+Text Label 1550 4050 2    50   ~ 0
+SEL_R
+Text Label 1550 4150 2    50   ~ 0
+SEL_G
+Text Label 1550 4250 2    50   ~ 0
+SEL_B
+Text Label 1550 4350 2    50   ~ 0
+SEL_C
+Text Label 1550 4450 2    50   ~ 0
+SEL_AOL
+Text Label 1550 4550 2    50   ~ 0
+SEL_AOR
+Wire Wire Line
+	1650 4550 1550 4550
+Wire Wire Line
+	1550 4450 1650 4450
+Wire Wire Line
+	1650 4350 1550 4350
+Wire Wire Line
+	1550 4250 1650 4250
+Wire Wire Line
+	1550 4150 1650 4150
+Wire Wire Line
+	1550 4050 1650 4050
+Wire Wire Line
+	3500 4550 2750 4550
+Wire Wire Line
+	2750 4650 3500 4650
+$Comp
+L CONN_01X04 P102
+U 1 1 5B33A65A
+P 3700 4700
+F 0 "P102" H 3700 4950 50  0000 C CNN
+F 1 "CONN_01X04" V 3800 4700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 3700 4700 50  0001 C CNN
+F 3 "" H 3700 4700 50  0000 C CNN
+	1    3700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 5B33B20D
+P 3400 4750
+F 0 "#PWR02" H 3400 4600 50  0001 C CNN
+F 1 "+5V" H 3400 4890 50  0000 C CNN
+F 2 "" H 3400 4750 50  0000 C CNN
+F 3 "" H 3400 4750 50  0000 C CNN
+	1    3400 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5B33B5F5
+P 3400 4950
+F 0 "#PWR03" H 3400 4700 50  0001 C CNN
+F 1 "GND" H 3400 4800 50  0000 C CNN
+F 2 "" H 3400 4950 50  0000 C CNN
+F 3 "" H 3400 4950 50  0000 C CNN
+	1    3400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4950 3400 4850
+Wire Wire Line
+	3400 4850 3500 4850
+Wire Wire Line
+	3500 4750 3400 4750
+Text Label 7150 4150 1    50   ~ 0
+12V_SHDN
+Wire Wire Line
+	7050 4150 7150 4150
+Wire Wire Line
+	2600 1050 2700 1050
+Wire Wire Line
+	2700 1150 2600 1150
+Wire Wire Line
+	2600 1250 2700 1250
+Wire Wire Line
+	2600 1450 2700 1450
+Wire Wire Line
+	2700 1550 2600 1550
+Wire Wire Line
+	2600 1650 2700 1650
+Wire Wire Line
+	2600 1850 2700 1850
+Wire Wire Line
+	2700 1950 2600 1950
+Wire Wire Line
+	2600 2050 2700 2050
+Wire Wire Line
+	2600 2250 2700 2250
+Wire Wire Line
+	2700 2350 2600 2350
+Wire Wire Line
+	2600 2450 2700 2450
+Wire Wire Line
+	2600 2650 2700 2650
+Wire Wire Line
+	2700 2750 2600 2750
+Wire Wire Line
+	2600 2850 2700 2850
+Wire Wire Line
+	2600 3050 2700 3050
+Wire Wire Line
+	2700 3150 2600 3150
+Wire Wire Line
+	2600 3250 2700 3250
+Text Label 2700 1050 0    50   ~ 0
+R1
+Text Label 2700 1150 0    50   ~ 0
+R2
+Text Label 2700 1250 0    50   ~ 0
+R3
+Text Label 2700 1450 0    50   ~ 0
+G1
+Text Label 2700 1550 0    50   ~ 0
+G2
+Text Label 2700 1650 0    50   ~ 0
+G3
+Text Label 2700 1850 0    50   ~ 0
+B1
+Text Label 2700 1950 0    50   ~ 0
+B2
+Text Label 2700 2050 0    50   ~ 0
+B3
+Text Label 2700 2250 0    50   ~ 0
+C1
+Text Label 2700 2350 0    50   ~ 0
+C2
+Text Label 2700 2450 0    50   ~ 0
+C3
+Text Label 2700 2650 0    50   ~ 0
+AOR1
+Text Label 2700 2750 0    50   ~ 0
+AOR2
+Text Label 2700 2850 0    50   ~ 0
+AOR3
+Text Label 2700 3050 0    50   ~ 0
+AOL1
+Text Label 2700 3150 0    50   ~ 0
+AOL2
+Text Label 2700 3250 0    50   ~ 0
+AOL3
+Wire Wire Line
+	1650 4750 1550 4750
+Wire Wire Line
+	1550 4850 1650 4850
+Wire Wire Line
+	1550 4950 1650 4950
+Wire Wire Line
+	1650 5150 1550 5150
+Wire Wire Line
+	1550 5250 1650 5250
+Wire Wire Line
+	1550 5350 1650 5350
+Text Label 1550 4750 2    50   ~ 0
+RGB1
+Text Label 1550 4850 2    50   ~ 0
+RGB2
+Text Label 1550 4950 2    50   ~ 0
+RGB2
+Text Label 1550 5150 2    50   ~ 0
+ASP1
+Text Label 1550 5250 2    50   ~ 0
+ASP2
+Text Label 1550 5350 2    50   ~ 0
+ASP3
+Wire Wire Line
+	4100 1100 4000 1100
+Wire Wire Line
+	4100 1200 4000 1200
+Wire Wire Line
+	4000 1300 4100 1300
+Wire Wire Line
+	4100 1400 4000 1400
+Wire Wire Line
+	4100 1600 4000 1600
+Wire Wire Line
+	4100 1700 4000 1700
+Wire Wire Line
+	4100 1900 4000 1900
+Wire Wire Line
+	4100 2000 4000 2000
+Text Label 4000 1100 2    50   ~ 0
+R1
+Text Label 4000 1200 2    50   ~ 0
+G1
+Text Label 4000 1300 2    50   ~ 0
+B1
+Text Label 4000 1400 2    50   ~ 0
+C1
+Text Label 4000 1600 2    50   ~ 0
+AOR1
+Text Label 4000 1700 2    50   ~ 0
+AOL1
+Text Label 4000 1900 2    50   ~ 0
+RGB1
+Text Label 4000 2000 2    50   ~ 0
+ASP1
+Wire Wire Line
+	5250 1100 5150 1100
+Wire Wire Line
+	5250 1200 5150 1200
+Wire Wire Line
+	5150 1300 5250 1300
+Wire Wire Line
+	5250 1400 5150 1400
+Wire Wire Line
+	5250 1600 5150 1600
+Wire Wire Line
+	5250 1700 5150 1700
+Wire Wire Line
+	5250 1900 5150 1900
+Wire Wire Line
+	5250 2000 5150 2000
+Text Label 5150 1100 2    50   ~ 0
+R2
+Text Label 5150 1200 2    50   ~ 0
+G2
+Text Label 5150 1300 2    50   ~ 0
+B2
+Text Label 5150 1400 2    50   ~ 0
+C2
+Text Label 5150 1600 2    50   ~ 0
+AOR2
+Text Label 5150 1700 2    50   ~ 0
+AOL2
+Text Label 5150 1900 2    50   ~ 0
+RGB2
+Text Label 5150 2000 2    50   ~ 0
+ASP2
+Wire Wire Line
+	6400 1100 6300 1100
+Wire Wire Line
+	6400 1200 6300 1200
+Wire Wire Line
+	6300 1300 6400 1300
+Wire Wire Line
+	6400 1400 6300 1400
+Wire Wire Line
+	6400 1600 6300 1600
+Wire Wire Line
+	6400 1700 6300 1700
+Wire Wire Line
+	6400 1900 6300 1900
+Wire Wire Line
+	6400 2000 6300 2000
+Text Label 6300 1100 2    50   ~ 0
+R3
+Text Label 6300 1200 2    50   ~ 0
+G3
+Text Label 6300 1300 2    50   ~ 0
+B3
+Text Label 6300 1400 2    50   ~ 0
+C3
+Text Label 6300 1600 2    50   ~ 0
+AOR3
+Text Label 6300 1700 2    50   ~ 0
+AOL3
+Text Label 6300 1900 2    50   ~ 0
+RGB3
+Text Label 6300 2000 2    50   ~ 0
+ASP3
+$EndSCHEMATC

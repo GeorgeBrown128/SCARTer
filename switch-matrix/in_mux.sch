@@ -97,9 +97,22 @@ F7 "Composite" O R 4550 1600 50
 F8 "Mode" O R 4550 1750 50 
 $EndSheet
 $Sheet
-S 6100 1000 650  900 
+S 5000 1000 650  900 
 U 5B229659
 F0 "scart_in_6" 50
+F1 "scart_in.sch" 50
+F2 "AO_Right" O R 5650 1050 50 
+F3 "AO_Left" O R 5650 1150 50 
+F4 "Blue" O R 5650 1300 50 
+F5 "Green" O R 5650 1400 50 
+F6 "Red" O R 5650 1500 50 
+F7 "Composite" O R 5650 1600 50 
+F8 "Mode" O R 5650 1750 50 
+$EndSheet
+$Sheet
+S 6100 1000 650  900 
+U 5B22967B
+F0 "scart_in_7" 50
 F1 "scart_in.sch" 50
 F2 "AO_Right" O R 6750 1050 50 
 F3 "AO_Left" O R 6750 1150 50 
@@ -111,8 +124,8 @@ F8 "Mode" O R 6750 1750 50
 $EndSheet
 $Sheet
 S 7200 1000 650  900 
-U 5B22967B
-F0 "scart_in_7" 50
+U 5B22969D
+F0 "scart_in_8" 50
 F1 "scart_in.sch" 50
 F2 "AO_Right" O R 7850 1050 50 
 F3 "AO_Left" O R 7850 1150 50 
@@ -121,19 +134,6 @@ F5 "Green" O R 7850 1400 50
 F6 "Red" O R 7850 1500 50 
 F7 "Composite" O R 7850 1600 50 
 F8 "Mode" O R 7850 1750 50 
-$EndSheet
-$Sheet
-S 8300 1000 650  900 
-U 5B22969D
-F0 "scart_in_8" 50
-F1 "scart_in.sch" 50
-F2 "AO_Right" O R 8950 1050 50 
-F3 "AO_Left" O R 8950 1150 50 
-F4 "Blue" O R 8950 1300 50 
-F5 "Green" O R 8950 1400 50 
-F6 "Red" O R 8950 1500 50 
-F7 "Composite" O R 8950 1600 50 
-F8 "Mode" O R 8950 1750 50 
 $EndSheet
 Wire Wire Line
 	5850 1050 5650 1050
@@ -313,19 +313,19 @@ Text Label 7600 3200 2    50   ~ 0
 B8
 Text Label 2500 2500 2    50   ~ 0
 R1
-Text Label 2500 2600 2    50   ~ 0
-R2
-Text Label 2500 2700 2    50   ~ 0
-R3
-Text Label 2500 2800 2    50   ~ 0
-R4
-Text Label 2500 2900 2    50   ~ 0
-R5
-Text Label 2500 3000 2    50   ~ 0
-R6
 Text Label 2500 3100 2    50   ~ 0
-R7
+R2
+Text Label 2500 2600 2    50   ~ 0
+R3
 Text Label 2500 3200 2    50   ~ 0
+R4
+Text Label 2500 2700 2    50   ~ 0
+R5
+Text Label 2500 3300 2    50   ~ 0
+R6
+Text Label 2500 2800 2    50   ~ 0
+R7
+Text Label 2500 3400 2    50   ~ 0
 R8
 Text Label 5050 2500 2    50   ~ 0
 G1
@@ -552,17 +552,17 @@ AOL7
 Text Label 7600 5400 2    50   ~ 0
 AOL8
 $Sheet
-S 11650 1000 650  900 
+S 8300 1000 650  900 
 U 5B296763
 F0 "scart_in_11" 50
 F1 "scart_in.sch" 50
-F2 "AO_Right" O R 12300 1050 50 
-F3 "AO_Left" O R 12300 1150 50 
-F4 "Blue" O R 12300 1300 50 
-F5 "Green" O R 12300 1400 50 
-F6 "Red" O R 12300 1500 50 
-F7 "Composite" O R 12300 1600 50 
-F8 "Mode" O R 12300 1750 50 
+F2 "AO_Right" O R 8950 1050 50 
+F3 "AO_Left" O R 8950 1150 50 
+F4 "Blue" O R 8950 1300 50 
+F5 "Green" O R 8950 1400 50 
+F6 "Red" O R 8950 1500 50 
+F7 "Composite" O R 8950 1600 50 
+F8 "Mode" O R 8950 1750 50 
 $EndSheet
 $Sheet
 S 9400 1000 650  900 
@@ -634,22 +634,9 @@ AOR9
 Text Label 10250 1150 0    50   ~ 0
 AOL9
 $Sheet
-S 12800 1000 650  900 
+S 10500 1000 650  900 
 U 5B29B7BF
 F0 "scart_in_12" 50
-F1 "scart_in.sch" 50
-F2 "AO_Right" O R 13450 1050 50 
-F3 "AO_Left" O R 13450 1150 50 
-F4 "Blue" O R 13450 1300 50 
-F5 "Green" O R 13450 1400 50 
-F6 "Red" O R 13450 1500 50 
-F7 "Composite" O R 13450 1600 50 
-F8 "Mode" O R 13450 1750 50 
-$EndSheet
-$Sheet
-S 10500 1000 650  900 
-U 5B29B7C9
-F0 "scart_in_10" 50
 F1 "scart_in.sch" 50
 F2 "AO_Right" O R 11150 1050 50 
 F3 "AO_Left" O R 11150 1150 50 
@@ -658,6 +645,19 @@ F5 "Green" O R 11150 1400 50
 F6 "Red" O R 11150 1500 50 
 F7 "Composite" O R 11150 1600 50 
 F8 "Mode" O R 11150 1750 50 
+$EndSheet
+$Sheet
+S 11650 1000 650  900 
+U 5B29B7C9
+F0 "scart_in_10" 50
+F1 "scart_in.sch" 50
+F2 "AO_Right" O R 12300 1050 50 
+F3 "AO_Left" O R 12300 1150 50 
+F4 "Blue" O R 12300 1300 50 
+F5 "Green" O R 12300 1400 50 
+F6 "Red" O R 12300 1500 50 
+F7 "Composite" O R 12300 1600 50 
+F8 "Mode" O R 12300 1750 50 
 $EndSheet
 Wire Wire Line
 	11350 1050 11150 1050
@@ -1376,11 +1376,11 @@ Text Label 10150 3500 2    50   ~ 0
 C11
 Text Label 10150 3600 2    50   ~ 0
 C12
-Text Label 2500 3300 2    50   ~ 0
+Text Label 2500 2900 2    50   ~ 0
 R9
-Text Label 2500 3400 2    50   ~ 0
-R10
 Text Label 2500 3500 2    50   ~ 0
+R10
+Text Label 2500 3000 2    50   ~ 0
 R11
 Text Label 2500 3600 2    50   ~ 0
 R12
@@ -1834,17 +1834,17 @@ F 3 "" H 9150 6050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 5000 1000 650  900 
+S 12800 1000 650  900 
 U 5B229637
 F0 "scart_in_5" 50
 F1 "scart_in.sch" 50
-F2 "AO_Right" O R 5650 1050 50 
-F3 "AO_Left" O R 5650 1150 50 
-F4 "Blue" O R 5650 1300 50 
-F5 "Green" O R 5650 1400 50 
-F6 "Red" O R 5650 1500 50 
-F7 "Composite" O R 5650 1600 50 
-F8 "Mode" O R 5650 1750 50 
+F2 "AO_Right" O R 13450 1050 50 
+F3 "AO_Left" O R 13450 1150 50 
+F4 "Blue" O R 13450 1300 50 
+F5 "Green" O R 13450 1400 50 
+F6 "Red" O R 13450 1500 50 
+F7 "Composite" O R 13450 1600 50 
+F8 "Mode" O R 13450 1750 50 
 $EndSheet
 $Comp
 L FMS6501A U401
@@ -1918,4 +1918,6 @@ Wire Wire Line
 	3900 4900 4000 4900
 Wire Wire Line
 	3900 4700 4000 4700
+Text Notes 6050 750  0    60   ~ 0
+Warning - Numbering is scrambled here!
 $EndSCHEMATC
